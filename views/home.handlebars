@@ -2,7 +2,11 @@
 <p>{{stuff}}</p>
 <p>{{other}}</p>
 <p>{{stock}}</p>
-<p>{{stock.companyName}}</p>
+
+<h2>{{stock.companyName}}</h2>
+<p>Market Cap: <strong>${{stock.marketCap}}</strong></p>
+<p>Latest Price: <strong>${{stock.latestPrice}}</strong></p>
+
 
 {{#each stock}}
     {{@key}} | {{this}}<br>
