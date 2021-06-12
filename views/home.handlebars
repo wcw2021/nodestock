@@ -1,3 +1,9 @@
 <h1>handlebars homepage ... Example App: Home</h1>
 <p>{{stuff}}</p>
 <p>{{other}}</p>
+<p>{{stock}}</p>
+<p>{{stock.companyName}}</p>
+
+{{#each stock}}
+    {{@key}} | {{this}}<br>
+{{/each}}
